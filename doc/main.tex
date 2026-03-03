@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[a4paper,margin=2.0cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage{array}
+
+\title{Propuesta ejecutiva \\Sistema de Gestión Ambiental habilitado por datos (SGA+IoT)\\Sede Palmira}
+\author{Verstech S.A.}
+\date{Marzo 2026}
+
+\begin{document}
+\maketitle
+\vspace{-0.8em}
+
+\section*{1. Panorama (qué es y para qué)}
+La Sede Palmira (edificios, granja/finca 12 ha, pozos de riego/uso, laboratorios, restaurantes y reserva natural) requiere un sistema modular para \textbf{medir, registrar, monitorear y reportar} variables ambientales y operativas, con el fin de:
+\begin{itemize}
+  \item mejorar la eficiencia en el uso de recursos (agua, energía, insumos) y priorizar inversiones con evidencia;
+  \item fortalecer cumplimiento, trazabilidad y reportes (internos y ante autoridad ambiental);
+  \item habilitar un camino ordenado hacia certificación futura del SGA, asegurando medición y evidencia documentada.
+\end{itemize}
+
+\section*{2. Enfoque (cómo se construye)}
+Se construye un ``sistema nervioso ambiental'' con tres capas:
+
+\textbf{(A) Captura en campo:} integración de medidores existentes + nuevos sensores/estaciones (según priorización), con comunicaciones WiFi y/o LoRa/LoRaWAN mediante gateways.
+
+\textbf{(B) Plataforma a medida:} software web para inventario de activos, georreferenciación, captura automática/manual, reglas de calidad de datos, alarmas, bitácoras, tableros e informes.
+
+\textbf{(C) Evidencia y continuidad:} despliegue en nube (aplicación + base de datos + almacenamiento de evidencias + backups + monitoreo), con exportación/respaldos locales según lineamientos TI; repositorio de evidencias (registros, hojas de vida de sensores, mantenimiento/calibración, eventos/incidencias).
+
+\section*{3. Espectro completo (modular y escalable)}
+El sistema se implementa por módulos para iniciar con un piloto y escalar por fases, sin rehacer lo construido:
+\begin{itemize}
+  \item \textbf{M0. Fundaciones:} inventario de activos (sensores, pozos, medidores, procesos), georreferenciación, usuarios/roles, bitácoras, repositorio documental y evidencias.
+  \item \textbf{M1. Agua:} pozos/consumos por zonas, balances básicos, alarmas por anomalías, reportes por periodo (mes/trimestre).
+  \item \textbf{M2. Energía:} consumos por edificio/zonas, tendencias, alertas por picos, comparativos por periodo.
+  \item \textbf{M3. Laboratorios y residuos:} registros operativos priorizados, trazabilidad de residuos (según definición institucional), evidencias y soportes.
+  \item \textbf{M4. Granja y bioconversión:} variables priorizadas, incidencias/eventos, consumos asociados, evidencias.
+  \item \textbf{M5. Reserva natural:} estaciones/registros de variables priorizadas (p.\,ej. lluvia/clima; incidencias; visitantes/actividades; variables definidas por la institución).
+  \item \textbf{M6. Reportería y cumplimiento:} plantillas de informes, exportaciones (PDF/CSV/Excel), trazabilidad, seguimiento de compromisos y evidencias.
+\end{itemize}
+
+\section*{4. Impacto esperado (por qué invertir)}
+\begin{itemize}
+  \item \textbf{Eficiencia:} detección temprana de fugas/sobreconsumos; focalización de inversiones donde hay mayor retorno.
+  \item \textbf{Gestión con evidencia:} indicadores comparables por zona y periodo; tablero ejecutivo para decisiones.
+  \item \textbf{Cumplimiento y auditorabilidad:} mediciones, métodos, frecuencia, resultados y evidencias organizadas y accesibles.
+  \item \textbf{Escalabilidad:} arquitectura lista para integrar nuevos sensores/hardware sin rediseñar el sistema.
+\end{itemize}
+
+\vspace{0.2em}
+\hrule
+\vspace{0.6em}
+
+\section*{5. Ejemplo preciso: Piloto de 4 meses (10 M COP/mes, hardware aparte)}
+\textbf{Objetivo del piloto:} validar viabilidad técnica y operativa, entregar una plataforma base en nube, e integrar 1--2 fuentes reales de datos (agua y/o energía) con tableros y reportes verificables.
+
+\subsection*{5.1 Alcance del piloto (qué incluye)}
+\begin{itemize}
+  \item Despliegue cloud del sistema (producción): aplicación, base de datos, almacenamiento de evidencias, backups y monitoreo.
+  \item M0 Fundaciones: inventario, georreferenciación básica, roles/permisos, bitácoras, repositorio documental.
+  \item M1 Agua (prioridad): monitoreo de pozos CEUNP (según puntos definidos) con captura, alarmas básicas y reporte mensual.
+  \item Revisión M2 Energía: evaluación de medidores existentes, prueba de integración; si es viable, integración de 1--2 medidores, si no, plantillas de importación + plan de integración.
+  \item Capacitación corta a usuarios clave y entrega de manual operativo básico (uso + administración).
+\end{itemize}
+
+\subsection*{5.2 Plan por mes (entregables verificables)}
+\textbf{Mes 1 -- Pozos CEUNP:} levantamiento, inventario/georreferenciación de pozos y activos del piloto; ingesta (manual o automática según disponibilidad), tablero básico y reporte mensual.
+
+\textbf{Mes 2 -- Energía:} auditoría de medidores disponibles y viabilidad técnica; integración de 1--2 medidores (si aplica) o importación CSV/Excel; tablero comparativo inicial.
+
+\textbf{Mes 3 -- Evidencia y operación:} repositorio de evidencias (hojas de vida, mantenimiento/calibración, incidencias), alarmas y bitácoras; ajustes de calidad de datos.
+
+\textbf{Mes 4 -- Puesta a punto y aceptación:} estabilización, pruebas con usuarios, capacitación final, acta de aceptación del piloto y \textbf{backlog} priorizado para fase 2 (expansión por módulos/puntos).
+
+\subsection*{5.3 Criterios de aceptación del piloto (ejemplos)}
+\begin{itemize}
+  \item Datos del(los) pozo(s) del piloto disponibles en tablero y reporte (periodo mensual) con trazabilidad de fuente.
+  \item Alarmas básicas operativas (umbral/rango) y bitácora de eventos/incidencias.
+  \item Repositorio de evidencias funcional (acceso, recuperación, control básico de cambios).
+  \item Acta de verificación del cliente: piloto ``aprobado'' + lista priorizada de expansión.
+\end{itemize}
+
+\section*{6. Modelo comercial (después del piloto)}
+Tras la verificación del piloto, se negocia el despliegue completo por fases (12--18 meses), incorporando más puntos de medición y módulos (agua/energía/labs/granja/reserva/reportes) sobre la \textbf{misma plataforma base}.
+
+\vfill
+\noindent\textit{Nota:} Este documento es ejecutivo; la especificación técnica detallada (protocolos, puntos, frecuencias, dimensionamiento cloud, BOQ final) se elabora dentro del Piloto (Meses 1--2).
+
+\end{document}
